@@ -1,0 +1,15 @@
+{
+  "name": "debug-project",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "Debug Test Project",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jacobscarter/debug-project.git"
+  },
+  "dependencies": {
+    "angular": "*",
+    "ui-router": "*",
+    "bootstrap" : "*"
+  }
+}

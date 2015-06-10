@@ -1,0 +1,30 @@
+<div class="container" ng-controller="todoController as ctrl">
+	<div class="row">
+		<div class="col-xs-6">
+			<h3>Create A New To Do Item</h3>
+			<form>
+			  <div class="form-group">
+			    <label>Title</label>
+			    <input type="text" class="form-control" ng-model="newItem.title">
+			  </div>
+			  <div class="form-group">
+			    <label>Description</label>
+			    <textarea class="form-control" rows="3" ng-model="newItem.desc"></textarea>
+			  </div>
+			  <button type="submit" class="btn btn-default" ng-click="ctrl.createItem(newItem)">Create</button>
+			</form>
+		</div>
+		<div class="col-xs-6">
+			<h3>Current To Do's</h3>
+			<em>One prebuilt one is loaded from server and should be showing below</em>
+			<div class="panel panel-primary" ng-repeat="item in ctrl.todos">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Title: {{item.title}}</h3>
+			  </div>
+			  <div class="panel-body">
+			    Description: {{item.description}}
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>

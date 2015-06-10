@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var server = app.listen(3000, function () {
   	var host = server.address().address;
   	var port = server.address().port;
+  	console.log('navigation to ', 'http://localhost:' + port);
 });
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies

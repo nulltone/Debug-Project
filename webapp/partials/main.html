@@ -1,13 +1,14 @@
 <div class="container" ng-controller="mainController as ctrl">
 	<div class="row">
-		<div class="col-xs-12 text-center">
-			<h2>Welcome {{ctrl.user.name}}!</h2>
-			<h4>Current Title: {{ctrl.user.title}}</h4>
+		<div class="col-xs-12 text-center" ng-repeat="user in ctrl.users">
+      <h2 ng-show="user.name">{{($index + 1)}}. Welcome {{user.name}}!</h2>
+			<h4 ng-if="user.title">Current Title: {{user.title}}</h4>
+      <h4 ng-if="!user.title" class="unemployed"><i>Current Title: Unemployed :(</i><h4>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-xs-12 text-center">
-			<h3>Is this a complete sen {{ctrl.greeting}}?</h3>
+			<h3>Is this a complete sen{{ctrl.greeting}}?</h3>
 		</div>
 	</div>
 </div>

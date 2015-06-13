@@ -21,6 +21,7 @@ install npm and bower dependencies
 
 ```
 $ npm install
+$ npm install -g bower
 $ bower install
 ```
 

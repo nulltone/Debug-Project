@@ -31,9 +31,14 @@ app.get('/api/v1/user', function (req, res) {
 	var username = req.body.username;
 	var data = [
 	    {
-	      "name" : "Jacob Carter",
-	      "title" : "Software Engineer"
-	    }
+	      "name" : "Mario Noriega",
+	      "title" : "Brogrammer, yo!"
+	    }, {
+        "name": "Jacob Carter",
+        "title": "Software Engineer"
+      }, {
+        "name": "John Doe"
+      }
 	  ]
 	res.send({
 		"result" : data

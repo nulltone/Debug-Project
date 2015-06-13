@@ -28,19 +28,20 @@ app.get('/api/v1/todos', function (req, res) {
 });
 
 app.get('/api/v1/user', function (req, res) {
-	var username = req.body.username;
-	var data = [
-	    {
-	      "name" : "Mario Noriega",
-	      "title" : "Brogrammer, yo!"
-	    }, {
+  var username = req.body.username;
+  var data = [
+      {
+        "name" : "Mario Noriega",
+        "title" : "Brogrammer, yo!"
+      }, {
         "name": "Jacob Carter",
         "title": "Software Engineer"
       }, {
         "name": "John Doe"
       }
-	  ]
-	res.send({
-		"result" : data
-	});
+    ];
+
+  res.send({
+    "result" : data
+  });
 });

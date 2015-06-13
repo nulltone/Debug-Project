@@ -38,7 +38,8 @@ debugProject.controller('mainController', function($scope, UserService) {
 });
 
 
-debugProject.controller('todoController', function($scope, DataService, UserService) {
+debugProject.controller('todoController',
+    function($scope, DataService, UserService) {
 
   var self = this;
 
